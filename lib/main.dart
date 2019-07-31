@@ -4,7 +4,10 @@ void main() {
   runApp(
     MaterialApp(
     title: "hello Flutter App",
-    home: new Material(
+    home:  Scaffold(appBar: AppBar(
+      title: Text("Title in App Bar"),
+    ),
+      body: Material(
       color: Colors.deepPurple,
       child: Center(
         child: Text(
@@ -12,8 +15,9 @@ void main() {
           textDirection: TextDirection.ltr,
           style: TextStyle(color: Colors.white, fontSize: 36.0),
     ),
-    )
-  )
-  ));
+    ),
+  ),
+  ),
+    ));
 }
 
